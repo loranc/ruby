@@ -1,1 +1,13 @@
-// Copy your irb shell history below !
+Last login: Mon Jan  6 13:58:37 on ttys000
+laurents-MacBook-Air:~ laurentcuzin$ irb
+1.9.3-p448 :001 > myname ="laurent"
+ => "laurent" 
+1.9.3-p448 :002 > def say_hi_to(name)
+1.9.3-p448 :003?>   puts "Hello #{name} welcome to the ouagon."
+1.9.3-p448 :004?>   end
+ => nil 
+1.9.3-p448 :005 > say_hi_to(myname)
+Hello laurent welcome to the ouagon.
+ => nil 
+1.9.3-p448 :006 > 
+
