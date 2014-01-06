@@ -1,2 +1,15 @@
-// Copy some experiments you made on ruby String and Fixnum objects below !
-// You choose pick 3 methods for String and 3 methods for Fixnum
+
+ => "Test le wagon" 
+1.9.3-p448 :047 > "test le wagon".capitalize
+ => "Test le wagon" 
+1.9.3-p448 :048 > "test le wagon".center(20)
+ => "   test le wagon    " 
+1.9.3-p448 :050 > "test le wagon".upcase
+ => "TEST LE WAGON"
+
+ 1.9.3-p448 :051 > 435.size
+ => 8 
+1.9.3-p448 :052 > 9.next
+ => 10 
+1.9.3-p448 :053 > 8.to_s
+ => "8" 
