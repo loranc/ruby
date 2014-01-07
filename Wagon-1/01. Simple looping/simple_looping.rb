@@ -1,12 +1,26 @@
 # The objective is to create a function that computes the sum of the integers from a min value to a max value
 
-def sum(min,max)
-  # your code here
+# Sum while
+def sumwhile(min, max)
+	result = 0
+	while min <= max 
+	result += min 
+	min += 1
+
+	end
+	puts "#{result}" 
 end
+
+# Sum for
+def sumfor(min,max)
+	result = 0
+	for i in (min..max)
+		result += i 
+	end
+	puts "#{result}"
+end 
 
 # Testing your code
 
-min = 1
-max = 100
-sum = sum(1,100)
-puts sum == 5050 # => true
+sumfor(1,100)
+sumwhile(1,100)
