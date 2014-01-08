@@ -1,5 +1,5 @@
 class PlayerMoving
-  grid_positions = (1..100).to_a
+  GRID_POSITIONS = (1..100).to_a
   
   def initialize(position) 
     @position = position
@@ -25,17 +25,17 @@ class PlayerMoving
   end
     
   def status_player
-      if(@position > 100)
+      if @position > 100
         :win 
-      elsif(@position < 0)
+      elsif @position < 0
         :loose
       else  
         :play
       end
   end
     
-  def hasWon 
-    status_Player  == :win
+  def has_won 
+    status_player  == :win
   end
 
 end
@@ -44,7 +44,7 @@ player = PlayerMoving.new(50)
 player.play
 puts player.status_player == :play # true
 player.cheat
-puts player.hasWon == true
+puts player.has_won == true
   
 begin
   PlayerMoving.new(110)
