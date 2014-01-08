@@ -9,3 +9,13 @@ chapters = [
            ]
            
 # You program goes here !
+
+#code by Celine
+
+puts title.center(50) 
+
+chapters.each do |x, y|
+        print "Chapitre #{chapters.index([x, y]) + 1}:".ljust(15) 
+        print "#{x}".ljust(50)
+        puts "page #{y}".rjust(10)
+end
