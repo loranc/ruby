@@ -4,24 +4,28 @@ def beersong(start_number)
   while start_number > 0
     case start_number
     when 1
-      puts "1 bottle of beer on the wall, 1 bottles of beer!"
+      puts "1 bottle of beer on the wall, 1 bottle of beer!" # il restait un "s" là ! ^^
       puts "Take one down, pass it around, 0 bottle of beer on the wall!"
-      start_number -= 1
     when 2
       puts "2 bottles of beer on the wall, 2 bottles of beer!"
       puts "Take one down, pass it around, 1 bottle of beer on the wall!"
-      start_number -= 1
     else
       puts "#{start_number} bottles of beer on the wall, #{start_number} bottles of beer!"
       puts "Take one down, pass it around, #{start_number -1} bottles of beer on the wall!"
-      start_number -= 1
     end
+    
+    # start_number peut être décrémenté après le case, pourquoi l'avoir répété ?
+    start_number -= 1
   end
 end
 
-beersong (ARGV[0].to_i)
+# Evite l'espace entre le nom de la fonction et ses paramètres quand tu as des parenthèses
+beersong(ARGV[0].to_i)
+
 
 # best soluce : don't use a while loop but use simple conditional structure which iterate one the function with a -1
+
+# (cf. version Boris) ça s'appelle la récursivité :)
 
 ##################################################################################
 
