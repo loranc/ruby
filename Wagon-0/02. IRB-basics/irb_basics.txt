@@ -9,5 +9,10 @@ laurents-MacBook-Air:~ laurentcuzin$ irb
 1.9.3-p448 :005 > say_hi_to(myname)
 Hello laurent welcome to the ouagon.
  => nil 
-1.9.3-p448 :006 > 
+1.9.3-p448 :006 >
+
+
+exit
+end
+
 

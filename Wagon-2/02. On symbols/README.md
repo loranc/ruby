@@ -17,8 +17,14 @@ harry_hash.object_id
 Try to answer the following questions and discuss them together.
 
 * what are the differences between Strings and Symbols ?
+http://www.robertsosinski.com/2009/01/11/the-difference-between-ruby-symbols-and-strings/
+
 * When is it more relevant to use one or the other class ?
+
+
 * In terms of memory, what's the behavior of each class ? 
+Strings are mutable, every string have its own place in memory
+
 
 ## Now understand more in-depth 
 
@@ -33,9 +39,17 @@ For each example what should you use ? try to examine what each solution means, 
 
 * `{"temperature" => "10 deg Celsius", "pressure" => "10 bar"}` or `{:temperature => :"10 deg Celsius", :pressure => :"10 bar"}`  or `{"temperature" => :"10 deg Celsius", "pressure" => :"10 bar"}`  or `{:temperature => "10 deg Celsius", :pressure => "10 bar"}` or `{temperature => "10 deg Celsius", pressure => "10 bar"}`
 
+###soluce#### {:temperature => "10 deg Celsius", :pressure => "10 bar"}
+
 * `user_name = :bob` or `user_name = "bob"` or  `"user_name" = "bob"` or  `:user_name = :bob` 
 
+###soluce#### `user_name = "bob"`
+
 * `{"action" => "show", controller => "users"}` or something else ? 
+
+###soluce####
+`{action" : "show", controller : "users"}`
+
 
 ## Warning
 The notation `{:symbol => "value"}` is doomed to disappear as symbol are nearly always used for hash keys. The new convention you should **systematically** use is `{symbol: "value"}`.

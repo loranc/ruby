@@ -37,6 +37,20 @@ beersong (ARGV[0].to_i)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ####################### Solution 1 Version Boris ####################### 
 # def beersong(nb_at_start)
 #   case nb_at_start

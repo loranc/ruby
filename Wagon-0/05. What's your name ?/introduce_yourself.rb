@@ -1,24 +1,22 @@
-# your code goes here, introduce yourself !
-puts "first_name?"
-first_name = gets.chomp
-puts "middle_name?"
-middle_name = gets.chomp
-puts "last name?"
-last_name = gets.chomp
+###What's your name?
 
-fullname = "#{first_name} #{middle_name} #{last_name}"
-fullname_character = fullname.length
+	puts "what's is your first name?"
+	first_name = gets.chomp
+	puts "what's your middle name?"
+	middle_name= gets.chomp
+	puts "What's your last name?"
+	last_name= gets.chomp
+	
+	puts "Hello," + " " + first_name + " " + middle_name + " " + last_name
+	puts "Hello, #{first_name} #{middle_name} #{last_name}"
+	puts "Number of char is " + (first_name + middle_name + last_name).length.to_s
 
-puts "Hello," + fullname
-puts "Hello," + " " + first_name + " " + middle_name + " " + last_name
 
+	fullname = first_name + " " + middle_name + " " + last_name
+	puts fullname.length
 
-puts "fullname has got #{fullname_character} characters, including spaces"
-
-if fullname == "laurent jean cuzin"
-	puts "You're a good person"
-	elsif fullname == "Boris Alexandre Papillard"
-	puts "You're a good person too"
+	if fullname == "johan et pirlouit"
+		puts "You're a good person"
 	else
-end
-
+		puts "no a good person"
+	end
