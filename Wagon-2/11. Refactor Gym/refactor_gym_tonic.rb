@@ -24,4 +24,16 @@ def hop_hop_hop(number_of_exercices)
   end
 end
 
+######################################
+
+def hop_hop_hop2(number_of_exercises)
+  number_of_exercises.times do |i|
+  puts "hop!" * i + "Encore une fois.."
+  end
+end
+
 hop_hop_hop(6)
+hop_hop_hop2(6)
+
+
+
