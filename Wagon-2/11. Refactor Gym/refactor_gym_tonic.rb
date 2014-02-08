@@ -1,17 +1,26 @@
 # Very dirty code to make some dirty gym...
-def hop_hop_hop(number_of_exercises)
-  for i in (1..number_of_exercises) do 
-    counter = 0
-    until counter == i do
-      print "hop! "
-      counter += 1
-    end
-    unless counter != i # Test if reaching the end of the current exercise.
-      # Prints message in that case    
-      print 'Encore une fois..' + "\n"
-    end  
-    # Reset counter to 0 for the next exercise
-    counter = 0
+# def hop_hop_hop(number_of_exercises)
+#   for i in (1..number_of_exercises) do 
+#     counter = 0
+#     until counter == i do
+#       print "hop! "
+#       counter += 1
+#     end
+#     unless counter != i # Test if reaching the end of the current exercise.
+#       # Prints message in that case    
+#       print 'Encore une fois..' + "\n"
+#     end  
+#     # Reset counter to 0 for the next exercise
+#     counter = 0
+#   end
+# end
+
+#### test recusivity, doesn't work like this
+
+def hop_hop_hop(number_of_exercices)
+  unless number_of_exercices < 1
+  print "#{"hop!"*number_of_exercices}" + "encore une fois.." + "\n"
+  hop_hop_hop(number_of_exercices-1)
   end
 end
 
